@@ -1,5 +1,6 @@
 import React from 'react';
-import { Trees, Phone, Mail, MapPin, Globe, ArrowUp } from 'lucide-react';
+import { Phone, Mail, MapPin, Globe, ArrowUp } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 import './Footer.css';
 
 export default function Footer() {
@@ -12,7 +13,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <a href="#home" className="footer-logo" aria-label="Oxford Landscape Home">
-              <div className="footer-logo-mark"><Trees size={22} /></div>
+              <img
+                src={getAssetUrl('/images/logo.png')}
+                alt="Oxford Landscape Logo"
+                className="footer-logo-img"
+              />
               <div>
                 <div className="footer-brand-name">Oxford Landscape</div>
                 <div className="footer-brand-tag">Landscaping is in our DNA</div>
@@ -95,7 +100,7 @@ export default function Footer() {
             © {new Date().getFullYear()} <strong>Oxford Landscape</strong> (oxfordlandscape.in). All rights reserved.
           </p>
           <p className="footer-credit">
-            Made with care by <a href="https://a2solutions.in" target="_blank" rel="noopener noreferrer">a2solutions.in</a>
+            Made with care by <a href="https://www.a2solution.in/" target="_blank" rel="noopener noreferrer">A2Solution</a>
           </p>
           <button className="back-to-top" onClick={scrollTop} aria-label="Back to top">
             <ArrowUp size={14} />

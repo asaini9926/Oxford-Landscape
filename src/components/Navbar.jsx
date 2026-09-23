@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Trees, PhoneCall, Menu, X } from 'lucide-react';
+import { PhoneCall, Menu, X } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 import './Navbar.css';
 
 const navLinks = [
@@ -42,9 +43,11 @@ export default function Navbar() {
       <div className="container navbar-inner">
         {/* Brand */}
         <a href="#home" className="nav-brand" onClick={close} aria-label="Oxford Landscape — Home">
-          <div className="nav-logo-mark">
-            <Trees size={22} />
-          </div>
+          <img
+            src={getAssetUrl('/images/logo.png')}
+            alt="Oxford Landscape Logo"
+            className="nav-brand-logo-img"
+          />
           <div className="nav-brand-text">
             <span className="nav-brand-name">Oxford Landscape</span>
             <span className="nav-brand-tagline">Landscaping is in our DNA</span>
