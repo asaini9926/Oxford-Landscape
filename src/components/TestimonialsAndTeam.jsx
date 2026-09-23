@@ -11,6 +11,7 @@ const TEAM_MEMBERS = [
     degree: 'Ph.D.',
     university: 'Maharana Pratap University, Udaipur (Rajasthan)',
     image: '/images/team/dr_suresh.jpeg',
+    objectPosition: 'center 15%',
     specialty: 'Plant Biotechnology & Soil Biology',
     bio: 'Leading scientific approaches in plant genetics, root-ball revitalization, soil microbiology, and advanced hormonal therapies for mature tree transplantation.',
   },
@@ -20,6 +21,7 @@ const TEAM_MEMBERS = [
     degree: 'M.Sc Food Technology',
     university: 'Central University of Haryana',
     image: '/images/team/parul.jpeg',
+    objectPosition: 'center 8%',
     specialty: 'Flora Nutrition & Orchard Sciences',
     bio: 'Specializing in horticultural nutrition regimes, soil enrichment science, organic turf cultivation, and edible fruit orchard design for private country estates.',
   },
@@ -29,6 +31,7 @@ const TEAM_MEMBERS = [
     degree: 'M.Sc Entomology',
     university: 'Sam Higginbottom University of Agriculture, Technology and Sciences (Deemed-to-be-University)',
     image: '/images/team/pawan_saini.jpeg',
+    objectPosition: 'center 18%',
     specialty: 'Integrated Pest Management (IPM)',
     bio: 'Expert in insect ecology, biological pest suppression, and plant protection protocols, safeguarding delicate ornamental gardens against infestations.',
   },
@@ -83,6 +86,7 @@ export default function TestimonialsAndTeam() {
                     src={getAssetUrl(member.image)}
                     alt={member.name}
                     loading="lazy"
+                    style={{ objectPosition: member.objectPosition || 'center 20%' }}
                   />
                   <div className="team-role-pill">
                     <Microscope size={13} />
