@@ -75,8 +75,8 @@ export default function ContactSection() {
                 <div className="cdi-icon"><MapPin size={20} /></div>
                 <div>
                   <span className="cdi-label">Corporate Office</span>
-                  <span className="cdi-value">A-126, Sector 63, Noida</span>
-                  <span className="cdi-sub">Uttar Pradesh – 201301, India</span>
+                  <span className="cdi-value">Ganesh Road, Virat Nagar</span>
+                  <span className="cdi-sub">Jaipur, Rajasthan, India</span>
                 </div>
               </div>
 

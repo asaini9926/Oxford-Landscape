@@ -67,8 +67,8 @@ export default function Footer() {
                 <MapPin size={16} className="f-icon" />
                 <div>
                   <strong>Head Office</strong>
-                  <span>A-126, Sector 63, Noida</span>
-                  <span>UP – 201301, India</span>
+                  <span>Ganesh Road, Virat Nagar</span>
+                  <span>Jaipur, Rajasthan, India</span>
                 </div>
               </div>
               <div className="f-item">
