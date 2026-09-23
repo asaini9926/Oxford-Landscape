@@ -1,0 +1,142 @@
+.vision-slide-section {
+  position: relative;
+  background-color: var(--pdf-white);
+  padding: 6rem 0 6.5rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(69, 120, 0, 0.08);
+}
+
+.vision-slide-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 4rem;
+  position: relative;
+  z-index: 3;
+}
+
+/* Slide 3 Green Container Card */
+.pdf-green-card {
+  background-color: var(--pdf-green);
+  border-radius: 16px;
+  padding: 2.25rem 2rem 2.5rem 2rem;
+  box-shadow: 0 12px 32px rgba(69, 120, 0, 0.18);
+  position: relative;
+}
+
+.pdf-card-header-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #559408;
+  color: #ffffff;
+  padding: 0.6rem 1.8rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pill-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.pdf-card-body-text {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/* 2 Arched Vertical Photos */
+.vision-arched-photos-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.vision-arched-card {
+  border-radius: 0 100px 0 0;
+  overflow: hidden;
+  border: 5px solid var(--pdf-green);
+  height: 300px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
+.vision-arched-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Column: Title + Vision Card */
+.vision-title-wrap {
+  margin-bottom: 2.5rem;
+}
+
+.vision-main-title {
+  font-family: var(--font-sans);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--pdf-green);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
+}
+
+.vision-lead-text {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: #222222;
+  line-height: 1.75;
+}
+
+.vision-pill {
+  justify-content: space-between;
+}
+
+@media (max-width: 1080px) {
+  .vision-slide-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .vision-main-title {
+    font-size: 2.8rem;
+  }
+
+  .vision-arched-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .vision-main-title {
+    font-size: 2.3rem;
+  }
+
+  .pdf-card-header-pill {
+    font-size: 1.05rem;
+    padding: 0.5rem 1.4rem;
+  }
+
+  .pdf-card-body-text {
+    font-size: 1rem;
+  }
+
+  .vision-arched-card {
+    height: 200px;
+    border-radius: 0 60px 0 0;
+    border-width: 4px;
+  }
+}

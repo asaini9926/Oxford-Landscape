@@ -1,0 +1,102 @@
+/* Top-left hanging olive tab */
+.pdf-corner-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 34px;
+  background-color: var(--pdf-green);
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bottom-left horizontal rounded capsule bar */
+.pdf-bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 440px;
+  height: 32px;
+  background-color: var(--pdf-green);
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Signature 3 green dots ● ● ● */
+.pdf-dots-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 1.25rem 0;
+}
+
+.pdf-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--pdf-green);
+  display: inline-block;
+}
+
+/* Wave Wrappers */
+.pdf-wave-wrap {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pdf-wave-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Wave positions */
+.wave-br {
+  bottom: 0;
+  right: 0;
+  width: 520px;
+  max-width: 50vw;
+  height: 360px;
+}
+
+.wave-tr {
+  top: 0;
+  right: 0;
+  width: 500px;
+  max-width: 48vw;
+  height: 320px;
+}
+
+.wave-bl {
+  bottom: 0;
+  left: 0;
+  width: 520px;
+  max-width: 50vw;
+  height: 360px;
+}
+
+@media (max-width: 768px) {
+  .pdf-corner-tab {
+    width: 180px;
+    height: 24px;
+  }
+  .pdf-bottom-bar {
+    width: 220px;
+    height: 24px;
+  }
+  .wave-br,
+  .wave-tr,
+  .wave-bl {
+    width: 280px;
+    height: 200px;
+  }
+  .pdf-dot {
+    width: 10px;
+    height: 10px;
+    gap: 8px;
+  }
+}

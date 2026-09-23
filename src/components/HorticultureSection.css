@@ -1,0 +1,170 @@
+/* Slide 14 Section */
+.hort-slide14-section {
+  position: relative;
+  background-color: var(--pdf-white);
+  padding: 6rem 0 6.5rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(69, 120, 0, 0.08);
+}
+
+.hort-slide14-container {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+  z-index: 3;
+}
+
+.hort14-visual-col {
+  display: flex;
+  justify-content: center;
+}
+
+.hort14-arch-frame {
+  border-radius: 0 100px 0 0;
+  overflow: hidden;
+  border: 6px solid var(--pdf-green);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 480px;
+  height: 480px;
+  background-color: #f5f5f5;
+}
+
+.hort14-arch-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hort14-text-col {
+  max-width: 640px;
+}
+
+.hort14-main-title {
+  font-family: var(--font-sans);
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: var(--pdf-green);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.hort14-lead-desc {
+  font-family: var(--font-body);
+  font-size: 1.12rem;
+  color: #222222;
+  line-height: 1.75;
+}
+
+.hort14-footer-summary {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1.65;
+}
+
+/* Slide 15 Section: Editorial Cream */
+.hort-slide15-section {
+  position: relative;
+  background-color: var(--pdf-cream);
+  padding: 5.5rem 0 6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hort15-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.hort15-serif-title {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--pdf-serif-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Exact Slide 15 4-Photo Quad Layout */
+.hort15-quad-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 2rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.hort15-stacked-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 520px;
+}
+
+.hort15-stacked-col .hort15-img-card {
+  flex: 1;
+}
+
+.hort15-middle-col,
+.hort15-right-col {
+  height: 520px;
+}
+
+.hort15-img-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  height: 100%;
+}
+
+.hort15-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hort-footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.5rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 1080px) {
+  .hort-slide14-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hort14-main-title {
+    font-size: 2.8rem;
+  }
+
+  .hort14-arch-frame {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .hort15-quad-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hort15-stacked-col,
+  .hort15-middle-col,
+  .hort15-right-col {
+    height: auto;
+  }
+
+  .hort15-stacked-col .hort15-img-card,
+  .hort15-middle-col .hort15-img-card,
+  .hort15-right-col .hort15-img-card {
+    height: 320px;
+  }
+}

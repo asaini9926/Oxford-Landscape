@@ -1,0 +1,98 @@
+/* ============================================================
+   Oxford Landscape — Premium Light Luxury Design Tokens
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ── Core Brand Palette ─────────────────────────────────── */
+  --green-950:   #0a2e10;   /* richest forest */
+  --green-900:   #14451c;
+  --green-800:   #1e6128;
+  --green-700:   #2a7d34;   /* primary brand green */
+  --green-600:   #357a40;
+  --green-500:   #4a9955;
+  --green-400:   #6eb87a;
+  --green-100:   #e8f5eb;
+  --green-50:    #f4fbf5;
+
+  --gold-600:    #a07820;
+  --gold-500:    #c49a2a;   /* primary gold accent */
+  --gold-400:    #d4aa3a;
+  --gold-300:    #e8ca6a;
+  --gold-100:    #fdf6e0;
+
+  --neutral-950: #0d0d0d;
+  --neutral-900: #1a1a1a;
+  --neutral-800: #2d2d2d;
+  --neutral-700: #404040;
+  --neutral-600: #595959;
+  --neutral-500: #737373;
+  --neutral-400: #a0a0a0;
+  --neutral-300: #c4c4c4;
+  --neutral-200: #e5e5e5;
+  --neutral-100: #f5f5f5;
+  --neutral-50:  #fafafa;
+  --white:       #ffffff;
+
+  /* ── Semantic Aliases ───────────────────────────────────── */
+  --primary:          var(--green-700);
+  --primary-dark:     var(--green-900);
+  --primary-light:    var(--green-500);
+  --primary-subtle:   var(--green-50);
+  --accent-gold:      var(--gold-500);
+  --accent-gold-dark: var(--gold-600);
+
+  --bg-page:     var(--white);
+  --bg-surface:  var(--neutral-50);
+  --bg-card:     var(--white);
+  --bg-section-alt: #f7faf7;   /* very subtle green-tint */
+
+  --text-heading:   var(--neutral-950);
+  --text-body:      var(--neutral-700);
+  --text-muted:     var(--neutral-500);
+  --text-on-green:  var(--white);
+
+  --border-light:   #e8ede9;
+  --border-medium:  #d0d8d1;
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-serif:  'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display:'Montserrat', var(--font-sans);
+
+  /* ── Sizing ─────────────────────────────────────────────── */
+  --container-max: 1240px;
+  --container-pad: clamp(1.25rem, 5vw, 3rem);
+  --section-py:    clamp(5rem, 8vw, 9rem);
+
+  /* ── Radius ─────────────────────────────────────────────── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   32px;
+  --radius-pill: 9999px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-xs:  0 1px 3px rgba(0,0,0,0.06);
+  --shadow-sm:  0 4px 12px rgba(0,0,0,0.07);
+  --shadow-md:  0 8px 28px rgba(0,0,0,0.09);
+  --shadow-lg:  0 18px 48px rgba(0,0,0,0.12);
+  --shadow-xl:  0 32px 72px rgba(0,0,0,0.14);
+  --shadow-green: 0 12px 40px rgba(42,125,52,0.18);
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.4, 0, 1, 1);
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast:     0.18s;
+  --t-normal:   0.3s;
+  --t-slow:     0.5s;
+
+  /* ── Z-Index Ladder ──────────────────────────────────────── */
+  --z-base:    1;
+  --z-above:   10;
+  --z-nav:     100;
+  --z-modal:   200;
+  --z-toast:   300;
+}

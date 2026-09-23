@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#52b788" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#1b4332" />
+  <!-- stylized leaf motif -->
+  <path d="M 50 16 C 68 26, 80 44, 76 68 C 62 82, 38 80, 26 66 C 20 48, 32 26, 50 16 Z" fill="url(#leafGrad)" />
+  <path d="M 36 66 Q 50 48 64 34" stroke="#d8f3dc" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 48 50 Q 56 52 62 48" stroke="#d8f3dc" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 42 58 Q 48 62 54 60" stroke="#d8f3dc" stroke-width="2.5" stroke-linecap="round" fill="none" />
+</svg>

@@ -1,0 +1,167 @@
+.execution-slide-section {
+  position: relative;
+  background-color: var(--pdf-cream);
+  padding: 5.5rem 0 6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.execution-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.execution-serif-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--pdf-serif-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.execution-serif-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--pdf-green);
+  text-transform: uppercase;
+}
+
+/* Tabs styled cleanly */
+.execution-deck-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.deck-tab-btn {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #444;
+  padding: 0.65rem 1.6rem;
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  border: 1px solid var(--pdf-cream-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.deck-tab-btn:hover {
+  border-color: var(--pdf-green);
+  color: var(--pdf-green);
+}
+
+.deck-tab-btn.active {
+  background-color: var(--pdf-green);
+  color: #ffffff;
+  border-color: var(--pdf-green);
+  box-shadow: 0 4px 14px rgba(69, 120, 0, 0.25);
+}
+
+/* Slide 5 Exact 2-Card Layout */
+.slide5-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide5-plan-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide5-arch-frame {
+  border-radius: 0 110px 0 0;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 480px;
+  transition: transform var(--transition-normal);
+}
+
+.slide5-arch-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.14);
+}
+
+.slide5-arch-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+/* Slide 6, 7, 8 Photo Galleries */
+.slide-photo-gallery-grid {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-photo-gallery-grid.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slide-photo-gallery-grid.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-photo-card .arch-card-frame {
+  border-radius: 0 80px 0 0;
+  height: 380px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.gallery-photo-card .arch-card-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.execution-footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.5rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 992px) {
+  .execution-serif-title {
+    font-size: 2.3rem;
+  }
+
+  .slide5-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .slide5-arch-frame {
+    height: 380px;
+  }
+
+  .slide-photo-gallery-grid.grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-photo-gallery-grid.grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-photo-card .arch-card-frame {
+    height: 300px;
+  }
+}

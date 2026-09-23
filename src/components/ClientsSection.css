@@ -1,0 +1,195 @@
+/* ============================================================
+   Clients Section — Premium text-badge grid, no broken images
+   ============================================================ */
+
+.clients-section {
+  padding-block: var(--section-py);
+  background: var(--white);
+}
+
+/* Logo Marquee */
+.client-logos-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.client-logos-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+.client-logos-marquee:hover .client-logos-track {
+  animation-play-state: paused;
+}
+
+.client-logo-card {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.client-logo-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-light);
+  box-shadow: 0 6px 16px rgba(42, 125, 52, 0.08);
+}
+
+.client-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(1.1) opacity(0.7);
+  transition: filter var(--transition-fast);
+}
+
+.client-logo-card:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Trust strip */
+.clients-trust-strip {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  padding: 1.5rem 2rem;
+  background: var(--bg-section-alt);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+.trust-strip-item svg {
+  color: var(--primary);
+}
+
+/* Sector groups */
+.clients-sectors {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.client-sector-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.client-sector-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.client-sector-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.client-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.client-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--white);
+  border: 1.5px solid var(--border-medium);
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-body);
+  transition: border-color var(--t-fast), background var(--t-fast),
+              color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.client-badge:hover {
+  border-color: var(--primary);
+  background: var(--green-50);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42,125,52,0.12);
+}
+
+.client-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Bottom CTA strip */
+.clients-cta-strip {
+  margin-top: 4rem;
+  padding: 2.5rem 3rem;
+  background: var(--green-900);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.clients-cta-text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.35rem;
+}
+
+.clients-cta-text p {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 768px) {
+  .clients-trust-strip { gap: 1.5rem; }
+  .clients-cta-strip { padding: 2rem; text-align: center; justify-content: center; }
+}

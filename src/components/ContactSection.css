@@ -1,0 +1,221 @@
+/* ============================================================
+   Contact Section — Two column, info + form
+   ============================================================ */
+
+.contact-section {
+  padding-block: var(--section-py);
+  background: var(--bg-section-alt);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 3.5rem;
+}
+
+/* Info Column */
+.contact-info {
+  position: sticky;
+  top: 6rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-body);
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast), transform var(--t-fast);
+}
+
+a.contact-detail-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(42,125,52,0.1);
+  transform: translateX(4px);
+}
+
+.cdi-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--green-100);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.cdi-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.cdi-value {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.4;
+}
+
+.cdi-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* WhatsApp callout */
+.wa-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #f0fdf0;
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-lg);
+  flex-wrap: wrap;
+}
+
+.wa-callout-text strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 0.15rem;
+}
+
+.wa-callout-text p {
+  font-size: 0.8rem;
+  color: #15803d;
+}
+
+.wa-callout-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.25rem;
+  background: #16a34a;
+  color: var(--white);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background var(--t-fast), transform var(--t-fast);
+  white-space: nowrap;
+}
+
+.wa-callout-btn:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+/* Form Card */
+.contact-form-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-form-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.4rem;
+}
+
+.contact-form-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-submit-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* Success State */
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+}
+
+.form-success-icon {
+  width: 72px;
+  height: 72px;
+  background: var(--green-100);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.form-success h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text-heading);
+}
+
+.form-success p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  line-height: 1.75;
+  max-width: 420px;
+}
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-info { position: static; }
+  .form-row { grid-template-columns: 1fr; }
+}

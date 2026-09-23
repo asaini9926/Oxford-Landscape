@@ -1,0 +1,205 @@
+.ggaon-section {
+  position: relative;
+  background: radial-gradient(circle at 10% 10%, rgba(45, 122, 84, 0.15) 0%, transparent 40%),
+              #0d2117;
+  color: #ffffff;
+}
+
+.ggaon-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+/* Blueprint Column */
+.ggaon-blueprint-col {
+  position: sticky;
+  top: 100px;
+}
+
+.ggaon-img-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: #153324;
+}
+
+.ggaon-main-blueprint {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blueprint-overlay-pill {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(13, 33, 23, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(233, 196, 106, 0.3);
+}
+
+.blueprint-caption {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Zones List Column */
+.ggaon-zones-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.zone-selector-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.zone-sparkle {
+  color: var(--accent-gold);
+}
+
+.zone-selector-header h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.zones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.zone-item-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.zone-item-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(233, 196, 106, 0.4);
+  transform: translateX(4px);
+}
+
+.zone-item-card.active {
+  background: rgba(45, 122, 84, 0.35);
+  border-color: var(--accent-gold);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.zone-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.zone-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-gold);
+}
+
+.zone-num {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.zone-item-card.active .zone-num {
+  color: #ffffff;
+}
+
+.zone-title {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.zone-desc {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.55;
+  margin-bottom: 0.85rem;
+}
+
+.zone-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.spec-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.zone-item-card.active .spec-pill {
+  background: rgba(233, 196, 106, 0.2);
+  color: var(--accent-gold);
+}
+
+/* CTA Box */
+.ggaon-cta-box {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ggaon-cta-box strong {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.ggaon-cta-box p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  .ggaon-grid {
+    grid-template-columns: 1fr;
+  }
+  .ggaon-blueprint-col {
+    position: static;
+  }
+}
