@@ -38,6 +38,7 @@ export default function Footer() {
               <li><a href="#services">Our Services</a></li>
               <li><a href="#clients">Top Clients</a></li>
               <li><a href="#gallery">Portfolio</a></li>
+              <li><a href="#team">Scientific Team</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -74,15 +75,14 @@ export default function Footer() {
                 <Phone size={16} className="f-icon" />
                 <div>
                   <strong>Direct Line</strong>
-                  <a href="tel:+919811222276">+91 9811222276</a>
+                  <a href="tel:+918505055304">+91 8505055304</a>
                 </div>
               </div>
               <div className="f-item">
                 <Mail size={16} className="f-icon" />
                 <div>
                   <strong>Email</strong>
-                  <a href="mailto:contact@oxfordlandscape.in">contact@oxfordlandscape.in</a>
-                  <a href="mailto:info@oxfordlandscape.in">info@oxfordlandscape.in</a>
+                  <a href="mailto:rajoriapawan664@gmail.com">rajoriapawan664@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -92,8 +92,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <p className="footer-copy">
-            © {new Date().getFullYear()} <strong>Oxford Landscape</strong> (oxfordlandscape.in).
-            All rights reserved. Crafted with excellence for living spaces across North India.
+            © {new Date().getFullYear()} <strong>Oxford Landscape</strong> (oxfordlandscape.in). All rights reserved.
+          </p>
+          <p className="footer-credit">
+            Made with care by <a href="https://a2solutions.in" target="_blank" rel="noopener noreferrer">a2solutions.in</a>
           </p>
           <button className="back-to-top" onClick={scrollTop} aria-label="Back to top">
             <ArrowUp size={14} />

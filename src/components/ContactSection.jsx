@@ -31,7 +31,7 @@ export default function ContactSection() {
     const text = encodeURIComponent(
       `Hello Oxford Landscape! My name is ${formData.name || 'a visitor'}. I am interested in ${formData.service} for approximately ${formData.area}. ${formData.message ? 'Message: ' + formData.message : 'Please share a consultation.'}`
     );
-    window.open(`https://wa.me/919811222276?text=${text}`, '_blank');
+    window.open(`https://wa.me/918505055304?text=${text}`, '_blank');
   };
 
   return (
@@ -55,20 +55,19 @@ export default function ContactSection() {
             </p>
 
             <div className="contact-details">
-              <a href="tel:+919811222276" className="contact-detail-item">
+              <a href="tel:+918505055304" className="contact-detail-item">
                 <div className="cdi-icon"><Phone size={20} /></div>
                 <div>
                   <span className="cdi-label">Call or WhatsApp</span>
-                  <span className="cdi-value">+91 9811222276</span>
+                  <span className="cdi-value">+91 8505055304</span>
                 </div>
               </a>
 
-              <a href="mailto:contact@oxfordlandscape.in" className="contact-detail-item">
+              <a href="mailto:rajoriapawan664@gmail.com" className="contact-detail-item">
                 <div className="cdi-icon"><Mail size={20} /></div>
                 <div>
                   <span className="cdi-label">Official Inquiries</span>
-                  <span className="cdi-value">contact@oxfordlandscape.in</span>
-                  <span className="cdi-sub">info@oxfordlandscape.in</span>
+                  <span className="cdi-value">rajoriapawan664@gmail.com</span>
                 </div>
               </a>
 

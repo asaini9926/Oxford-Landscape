@@ -203,8 +203,8 @@ export default function ServicesSection() {
                 >
                   Book Site Survey <ArrowRight size={15} />
                 </a>
-                <a href="tel:+919811222276" className="btn btn-outline">
-                  <PhoneCall size={15} /> Call +91 9811222276
+                <a href="tel:+918505055304" className="btn btn-outline">
+                  <PhoneCall size={15} /> Call +91 8505055304
                 </a>
               </div>
             </div>

@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
     const text = encodeURIComponent(
       'Hello Oxford Landscape! I found you online and would love to discuss a landscaping project.'
     );
-    window.open(`https://wa.me/919811222276?text=${text}`, '_blank');
+    window.open(`https://wa.me/918505055304?text=${text}`, '_blank');
   };
 
   return (

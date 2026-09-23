@@ -1,4 +1,137 @@
 /* ============================================================
+   Team Section — Scientific & Technical Experts
+   ============================================================ */
+.team-section {
+  padding-block: var(--section-py);
+  background: var(--bg-section-alt);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.team-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(42, 125, 52, 0.12);
+  border-color: var(--primary-light);
+}
+
+.team-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  background: #f1f5f2;
+}
+
+.team-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-card-image-wrap img {
+  transform: scale(1.05);
+}
+
+.team-role-pill {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(7, 24, 12, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-pill);
+  color: var(--gold-300);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.team-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.team-member-name {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--green-950);
+  margin-bottom: 0.35rem;
+}
+
+.team-member-degree {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.team-member-uni {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.team-card-divider {
+  height: 1px;
+  background: var(--border-light);
+  margin-bottom: 1rem;
+}
+
+.team-specialty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--green-800);
+  background: var(--green-50);
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+  width: fit-content;
+}
+
+.team-member-bio {
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  flex: 1;
+}
+
+/* ============================================================
    Testimonials — Light card layout with star ratings
    ============================================================ */
 
@@ -116,10 +249,12 @@
 }
 
 @media (max-width: 960px) {
+  .team-grid { grid-template-columns: 1fr 1fr; }
   .testimonials-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 600px) {
+  .team-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .satisfaction-bar { padding: 2rem; }
 }

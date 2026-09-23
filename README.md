@@ -24,7 +24,7 @@ Oxford Landscape is a premier landscaping and garden development firm with over 
   - Vertical Green Walls
 - **Client Trust & Marquee**: Showcasing partnerships with L&T, BHEL, Bechtel, NHAI, M3M, Adidas, Reebok, DPS, and more.
 - **Interactive Portfolio Lightbox**: High-resolution gallery with category filters and preview modals.
-- **Direct Lead Capture**: Integrated contact form and one-click WhatsApp consultation (+91 9811222276).
+- **Direct Lead Capture**: Integrated contact form and one-click WhatsApp consultation (+91 8505055304).
 
 ---
 
@@ -70,6 +70,6 @@ This repository is configured with automated GitHub Pages deployment via **GitHu
 ## 📞 Contact Details
 - **Company**: Oxford Landscape
 - **Website**: [oxfordlandscape.in](https://oxfordlandscape.in)
-- **Phone / WhatsApp**: +91 9811222276
-- **Email**: contact@oxfordlandscape.in / info@oxfordlandscape.in
+- **Phone / WhatsApp**: +91 8505055304
+- **Email**: rajoriapawan664@gmail.com
 - **Head Office**: A-126, Sector 63, Noida, Uttar Pradesh – 201301
